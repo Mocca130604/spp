@@ -15,6 +15,7 @@ class Petugas extends Model
         'nama_petugas',
         'username',
         'password',
+        'level',
     ];
 
     protected $hidden = [

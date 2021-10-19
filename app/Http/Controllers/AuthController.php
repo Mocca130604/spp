@@ -51,6 +51,7 @@ class AuthController extends Controller
             'nama_petugas' => 'required|string|between:2,100',
             'username' => 'required|string|max:100|unique:petugas',
             'password' => 'required|string|confirmed|min:6',
+            'level' => 'in:admin,petugasn',
         ]);
 
         if($validator->fails()){
